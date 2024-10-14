@@ -1,4 +1,0 @@
-image: node:20
-tasks:
-  - init: npm install && npm run build
-    command: npx vite --open

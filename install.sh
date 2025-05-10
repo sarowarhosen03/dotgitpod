@@ -2,13 +2,13 @@
 
 set -e
 
-WORKSPACE_DIR="workspace"
+WORKSPACE_DIR="/workspace"
 TARGET_DIR=$(find "$WORKSPACE_DIR" -mindepth 1 -maxdepth 1 -type d | head -n 1)
 VITE_CONFIG="$TARGET_DIR/vite.config.js"
 
 if [[ ! -f "$VITE_CONFIG" ]]; then
   echo "❌ vite.config.js not found in $TARGET_DIR"
-  exit 1
+  exit 0
 fi
 
 echo "➡ Found target project directory: $TARGET_DIR"

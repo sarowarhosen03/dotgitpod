@@ -7,7 +7,7 @@ TARGET_DIR=$(find "$WORKSPACE_DIR" -mindepth 1 -maxdepth 1 -type d | head -n 1)
 PROJECT_NAME=$(basename "$TARGET_DIR")
 
 VITE_CONFIG="$TARGET_DIR/vite.config.js"
-GITPOD_CONFIG="$WORKSPACE_DIR/$PROJECT_NAME.gitpod.yml"
+GITPOD_CONFIG="$WORKSPACE_DIR/$PROJECT_NAME/.gitpod.yml"
 
 echo "➡ Found target project directory: $TARGET_DIR"
 
